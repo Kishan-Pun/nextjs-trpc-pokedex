@@ -19,6 +19,11 @@ export default function Home() {
         Pokedex
       </Typography>
 
+      {!search && (
+        <Typography variant="h6" color="text.secondary" mt={4}>
+          Search for a Pokémon by name to begin!
+        </Typography>
+      )}
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -32,12 +37,7 @@ export default function Home() {
           onChange={(e) => setName(e.target.value)}
         />
 
-        <Button
-          variant="contained"
-          type="submit"
-          sx={{ mt: 2 }}
-          fullWidth
-        >
+        <Button variant="contained" type="submit" sx={{ mt: 2 }} fullWidth>
           Search
         </Button>
       </form>
