@@ -21,7 +21,7 @@ export default function Home() {
 
       {!search && (
         <Typography variant="h6" color="text.secondary" mt={4}>
-          Search for a Pokémon by name to begin!
+          Search for a Pokemon by name to begin!
         </Typography>
       )}
       <form
